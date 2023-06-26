@@ -1,0 +1,11 @@
+<div class="card w-25 m-3">
+    <div class="card-body">
+    <h5 class="card-title">{{cliente.numero.asegurado}}</h5>
+    <p class="card-text mb-0"><b>Asegurado:</b> {{cliente.asegurado.nombre}}</p>
+    <p class="card-text mb-0"><b>Fecha de Nacimiento:</b> {{cliente.asegurado.fecha_nacimiento}}</p>
+    <p class="card-text mb-0"><b>Documento:</b> {{cliente.asegurado.documento}}</p>
+    <p class="card-text mb-2"><b>Email:</b> {{cliente.asegurado.email}}</p>
+    <a href="{% url 'index' %}gestion_asegurados/{{cliente.id}}" class="btn btn-primary">Modificar</a>
+   
+    </div>
+</div>
